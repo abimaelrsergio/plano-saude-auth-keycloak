@@ -37,6 +37,9 @@ $ mvn install
 docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:24.0.1 start-dev
 ```
 
+### Faça as configurações no console de administração do Key Cloak
+## Entre com o usuário admin e senha admin na url: [Key Cloak](<http://localhost:8080/admin>)
+
 #### Execute a aplicação
 ```bash
 $ mvnw spring-boot:run
