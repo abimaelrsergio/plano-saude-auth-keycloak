@@ -14,6 +14,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [JPA](<https://spring.io/guides/gs/accessing-data-jpa/>)
 - [modelmapper](<https://modelmapper.org/>)
 - [Docker](<https://www.docker.com/>)
+- [Key Cloak](<https://www.keycloak.org/>)
 
 ## 🚀 Como rodar a aplicação
 #### Clone este repositório
@@ -29,6 +30,11 @@ $ cd plano-saude
 ##### Instale as dependências
 ```bash
 $ mvn install
+```
+
+#### Executar o KeyCloak
+```
+docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:24.0.1 start-dev
 ```
 
 #### Execute a aplicação
